@@ -14,20 +14,20 @@ int main()
     std::cout << "Make a new LinkedQueue using the copy constructor to display later on..\n\n";
     LinkedQueue<int>* copyIntegerQueue = new LinkedQueue<int>(*integerQueue);
     
-    std::cout << "Print the stack..\n";
+    std::cout << "Print the queue..\n";
     std::cout << *integerQueue << "\n";
     
     std::cout << "Size: " << integerQueue->size() << "\n\n";
 
     std::cout << "Element at the front: " << integerQueue->top() << "\n\n";
     
-    std::cout << "Pop the 3 elements at the top of the stack..\n";
+    std::cout << "Pop the 3 elements at the top of the queue..\n";
     for (int x = 0; x < 3; x++)
         std::cout << integerQueue->pop() << " was poped\n";
     
-    std::cout << "\nNow the new front of the stack: " << integerQueue->top() << "\n\n";
+    std::cout << "\nNow the new front of the queue: " << integerQueue->top() << "\n\n";
 
-    std::cout << "Print the stack again..\n";
+    std::cout << "Print the queue again..\n";
     std::cout << *integerQueue << std::endl;
 
     std::cout << "The deep copied LinkedQueue using the copy constructor remained unmodified:" << std::endl;
@@ -41,7 +41,7 @@ int main()
     std::cout << "Instantiating contacts LinkedQueue" << std::endl;
     LinkedQueue<Contact>* contactQueue = new LinkedQueue<Contact>(Contact("none","none","none","none",-1));
 
-    std::cout << "Push 3 contacts to contactStack\n\n";
+    std::cout << "Push 3 contacts to contactQueue\n\n";
     contactQueue->push(Contact("1", "Charles", "Disick", "4530 New Grove Avenue", 34));
     contactQueue->push(Contact("2", "Kylie", "Michaels", "2310 Buena Vista Apartments", 26));
     contactQueue->push(Contact("3", "Jackson", "Smith", "1265 New Dawn Apartments", 45));
@@ -58,7 +58,7 @@ int main()
         std::cout << "\npoping..\n" << contactQueue->pop();
 
     if (contactQueue->empty()) 
-        std::cout << "\ncontactStack is now empty\n";
+        std::cout << "\ncontactQueue is now empty\n";
 
     //deleting
     std::cout << "Freeing memory..\n";
