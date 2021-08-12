@@ -2,6 +2,7 @@
 LinkedQueue is a simple implementation of a Queue DS using a Doubly Linked List.
 
 ## Installation
+Steps for running the examples in `main.cpp`
 1. Clone the repo:
 ```
 https://github.com/BigBeakPenguin/LinkedQueue.git
